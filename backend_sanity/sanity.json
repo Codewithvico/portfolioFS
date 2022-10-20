@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "85vyieql",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "codewithvico_portfolio"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
